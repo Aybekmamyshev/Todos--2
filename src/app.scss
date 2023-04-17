@@ -1,0 +1,95 @@
+.app{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  &__wrapper{
+    width: 600px;
+    height: 1000px;
+  }
+  &__title{
+    color:#CC39FF;
+    font-weight: 600;
+    font-family: Algerian,sans-serif;
+  }
+  &__new{
+    width: 500px;
+    height: 40px;
+    border: 2px solid #00000050;
+    display: flex;
+    column-gap: 20px;
+    align-items: center;
+    padding: 10px 20px ;
+    margin-bottom: 20px;
+  }
+  &__input{
+    border: none;
+    outline: none;
+     width: 100%;
+    font-size: 18px;
+  }
+  &__label{
+    border: 2px solid #00000050;
+    width: 100%;
+    padding: 10px 5px;
+    border-radius: 8px;
+
+  }
+  &__add{
+    width: 40px;
+    height: 40px;
+    border: none;
+    border-radius: 8px;
+    background: #00000060;
+  }
+  &__box{
+    width: 500px;
+    height: 40px;
+    border: 2px solid #00000050;
+    display:flex;
+    justify-content: space-between;
+    padding: 10px 20px;
+  }
+  &__inner{
+    display: flex;
+    align-items: center;
+    column-gap: 10px;
+  }
+  &__clear{
+    width: 40px;
+    height: 40px;
+    border-radius: 8px;
+    border:1px solid #00000020;
+    background: transparent;
+    transition: 0.2s;
+    &:hover{
+      background: #00000020;
+    }
+  }
+  &__subtitle{
+    font-size: 19px;
+    font-weight: 400;
+  }
+  &__check{
+    width: 20px;
+    height: 20px;
+  }
+}
+.animate{
+   animation: swing 0.9s infinite linear;
+
+  @keyframes swing {
+    0%{
+      transform: scale(1.2) rotate(0deg);
+    }
+    50%{
+      transform: scale(1.3) rotate(180deg);
+      background: red;
+
+    }
+    100%{
+      transform: scale(1.1) rotate(360deg);
+      background: #CC39FF;
+
+    }
+  }
+}
